@@ -1,0 +1,20 @@
+body {
+  padding-top: 70px;
+}
+
+.jumbotron {
+  height: 550px;
+  background-image: url(http://static1.squarespace.com/static/4fe0f493e4b0abefd614e023/52f685c9e4b0374e6a08ebb5/52f686abe4b008f86b8bae5c/1391888045452/HarborWalkNo1_lo+copy.jpg);
+  background-size: cover;
+}
+
+.quote-1, .quote-2 {
+  font-size: 60px;
+}
+
+.quote-1 {
+
+}
+.quote-2 {
+
+}
