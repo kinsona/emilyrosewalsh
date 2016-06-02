@@ -1,12 +1,17 @@
 body {
+}
+
+.jumbo-wrapper {
   padding-top: 70px;
+  background-color: #b0cee4;
 }
 
 .jumbotron {
-  height: 550px;
+  height: 600px;
   margin-bottom: 0;
-  background-image: url(http://static1.squarespace.com/static/4fe0f493e4b0abefd614e023/52f685c9e4b0374e6a08ebb5/52f686abe4b008f86b8bae5c/1391888045452/HarborWalkNo1_lo+copy.jpg);
+  background-image: url(images/jumbo1_1.png);
   background-size: cover;
+  background-position: 70% 50%;
 }
 
 .quote-1, .quote-2 {
@@ -14,7 +19,8 @@ body {
 }
 
 .quote-1 {
-
+  /*position: relative;*/
+  /*top: 50%;*/
 }
 .quote-2 {
 
@@ -24,23 +30,34 @@ body {
   background-color: #b0cee4;
 }
 
+
 .headline h1 {
   font-size: 28px;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-.about {
-  padding-top: 16px;
-  background-color: #ddd;
+
+section {
+  padding-bottom: 24px;
 }
-.about h2 {
+
+
+.section-header {
   font-size: 60px;
   margin-bottom: 20px;
 }
 
-.about img {
+
+.about, .video {
+  background-color: #ddd;
 }
+
+
+.music {
+  background-color: #b0cee4;
+}
+
 
 .about p {
   font-size: 18px;
