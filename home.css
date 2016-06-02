@@ -70,6 +70,10 @@ section {
 
 footer {
   padding: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   background-color: #b0cee4;
+}
+
+footer p {
+  margin-top: 20px;
 }
