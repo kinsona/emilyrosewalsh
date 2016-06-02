@@ -62,3 +62,9 @@ section {
 .about p {
   font-size: 18px;
 }
+
+footer {
+  padding: 40px;
+  height: 160px;
+  background-color: #b0cee4;
+}
