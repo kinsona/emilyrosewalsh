@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="heading-<%= video[:id] %>">
+    <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-video" href="#video-<%= video[:id] %>" aria-expanded="false" aria-controls="video-<%= video[:id] %>">
+        <%= video[:title] %>
+      </a>
+    </h4>
+  </div>
+  <div id="video-<%= video[:id] %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<%= video[:id] %>">
+    <div class="panel-body">
+      <div class='row'>
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/<%= video[:id] %>" allowfullscreen class="embed-responsive-item"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
