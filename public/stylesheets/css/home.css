@@ -4,12 +4,13 @@ body {
 .navbar {
   padding-top: 8px;
 }
-/*
+
 .navbar-default {
   background-color: #b0cee4;
   border: none;
 }
 
+/*
 .navbar-default .navbar-brand {
   font-size: 36px;
 }

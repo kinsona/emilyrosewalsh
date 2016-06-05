@@ -2,7 +2,7 @@ require 'sinatra'
 require 'erb'
 require 'thin'
 require 'sinatra/partial'
-require 'pry'
+
 
 configure do
   set :partial_template_engine, :erb
@@ -12,6 +12,10 @@ end
 
 get "/" do
   @music_tracks = [
+    {id: 267714242, title: "The Queen's Epicedium, Henry Purcell", notes: "", recorded_date: Date.new(2015,3,16)},
+    {id: 267714241, title: "On This Island - Seascape, Benjamin Britten", notes: "", recorded_date: Date.new(2015,3,16)},
+    {id: 267714239, title: "Nachtstuck, Franz Schubert", notes: "", recorded_date: Date.new(2015,3,16)},
+    {id: 267714238, title: "Quatre Chansons de Ronsard - A Cupidon, Darius Milhaud", notes: "", recorded_date: Date.new(2015,3,16)},
     {id: 267210344, title: "Suleika I, Franz Schubert", notes: "", recorded_date: Date.new(2013,10,6)},
     {id: 267210343, title: "Twelve Poems of Emily Dickinson: 9. I Felt a Funeral in my Brain, Aaron Copland", notes: "", recorded_date: Date.new(2013,10,6)},
     {id: 267210342, title: "Duex Poemes de Louis Aragon - C, Francis Poulenc", notes: "", recorded_date: Date.new(2013,10,6)},
