@@ -1,15 +1,16 @@
 <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="headingOne">
+  <div class="panel-heading" role="tab" id="heading-<%= track[:id] %>">
     <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion-music" href="#music-one" aria-expanded="true" aria-controls="music-one">
-        Suleika I, Franz Schubert
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-music" href="#music-<%= track[:id] %>" aria-expanded="false" aria-controls="music-<%= track[:id] %>">
+        <%= track[:title] %>
       </a>
     </h4>
   </div>
-  <div id="music-one" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+  <div id="music-<%= track[:id] %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<%= track[:id] %>">
     <div class="panel-body">
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267210344&amp;color=b0cee4&amp;auto_play=false&amp;buying=false&amp;liking=false&amp;download=false&amp;sharing=false&amp;show_artwork=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-      Recorded live on October 6, 2013
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= track[:id] %>&amp;color=b0cee4&amp;auto_play=false&amp;buying=false&amp;liking=false&amp;download=false&amp;sharing=false&amp;show_artwork=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+      <p><%= track[:notes] %></p>
+      <p>Recorded live on <%= track[:recorded_date].strftime('%B %e, %Y') %></p>
     </div>
   </div>
 </div>
