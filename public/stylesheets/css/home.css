@@ -10,18 +10,10 @@ body {
   border: none;
 }
 
-/*
-.navbar-default .navbar-brand {
-  font-size: 36px;
-}
 
-.navbar-default .navbar-nav>li>a {
-  font-size: 16px;
-}
-*/
-
-section {
-  padding-top: 70px;
+.nav-anchor {
+  position: absolute;
+  transform: translateY(-50px);
 }
 
 
