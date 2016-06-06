@@ -20,6 +20,10 @@ body {
 }
 */
 
+section {
+  padding-top: 70px;
+}
+
 
 .jumbo-wrapper {
   padding-top: 70px;
